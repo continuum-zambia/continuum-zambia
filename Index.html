@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Health Hub</title>
+
+    <!--JS-->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+
+        <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-topbar="light" data-layout="horizontal" data-layout-size="boxed">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div class="main-content">
+
+            <div class="">
+
+                <!-- Page-Title -->
+                <div class="page-title-box">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="ml-4 col-md-8">
+                                <h1 class="text-white mb-1 font-size-25">Health Hub</h1>
+                                <p class="text-white font-size-16 mt-2">A state of the art health information platform, focusing on
+                                    educating members about general health issues on a level that is easily
+                                    understandable to them as lay persons.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+
+                <div class="">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div id="hccMediaContent" style="min-height: 400px;">
+                                    <div class="card-body">
+                                        <form class="p-3">
+                                            <div class="form-group m-0">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="hccSearchInput"
+                                                        placeholder="Search for...">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit"
+                                                            onclick="search(this)"><i
+                                                                class="mdi mdi-magnify"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <select class="form-control" id="hccCategoryDropdown">
+                                                                <option>All Categories</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <button class="btn btn-primary waves-effect waves-light" onclick="search(this)" type="button">Search Category</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <h2 class="text-center" id="noResults" style="display:none">No results found</h2>
+
+                                        <div class="mr-3 ml-3 mb-5">
+                                            <div class="row" id="hccMediaItems">
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <script src="scripts/hccMedia.js"></script>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end page-content-wrapper -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2020 © <a href="http://continuumzambia.com/">Continuum.</a>      
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Health Hub
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+
+
+</body>
+
+</html>
